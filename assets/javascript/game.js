@@ -45,7 +45,6 @@ crystalsAll.on('click', function () {
         crystalVal2 = 0;
         crystalVal3 = 0;
         crystalVal4 = 0;
-        console.log('win');
         $('#result').text('WINNER!!!');
         $('#result').append('<button id="reset"> Try Again? </button>');
         $('#reset').on('click', function () {
@@ -55,7 +54,7 @@ crystalsAll.on('click', function () {
             crystalVal2 = Math.floor(Math.random() * 12) + 1;
             crystalVal3 = Math.floor(Math.random() * 12) + 1;
             crystalVal4 = Math.floor(Math.random() * 12) + 1;
-            wins =+ 1;
+            wins += 1;
             $('#wins').text(wins)
             $('#score').text(userScore);
             $('#target').text(targetNum);
@@ -64,7 +63,7 @@ crystalsAll.on('click', function () {
             console.log(crystalVal2);
             console.log(crystalVal3);
             console.log(crystalVal4);
-            
+
 
         });
     };
@@ -74,7 +73,6 @@ crystalsAll.on('click', function () {
         crystalVal2 = 0;
         crystalVal3 = 0;
         crystalVal4 = 0;
-        console.log('lose')
         $('#result').text('YOU LOSE!!!');
         $('#result').append('<button id="reset"> Try Again? </button>')
         $('#reset').on('click', function () {
@@ -84,7 +82,7 @@ crystalsAll.on('click', function () {
             crystalVal2 = Math.floor(Math.random() * 12) + 1;
             crystalVal3 = Math.floor(Math.random() * 12) + 1;
             crystalVal4 = Math.floor(Math.random() * 12) + 1;
-            losses =+ 1;
+            losses += 1;
             $('#losses').text(losses)
             $('#score').text(userScore);
             $('#target').text(targetNum);
